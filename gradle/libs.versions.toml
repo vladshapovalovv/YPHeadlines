@@ -1,0 +1,48 @@
+[versions]
+accompanistSystemuicontroller = "0.31.4-beta"
+activity-compose = "1.7.2"
+androidx-junit = "1.1.5"
+coilCompose = "2.4.0"
+converterGson = "2.9.0"
+core-ktx = "1.10.1"
+core-splashscreen = "1.0.1"
+datastorePreferences = "1.0.0"
+espresso-core = "3.5.1"
+hiltNavigationCompose = "1.0.0"
+hiltCompiler = "2.46.1"
+foundation = "1.5.0"
+junit = "4.13.2"
+lifecycle-runtime-ktx = "2.6.1"
+pagingVersion = "3.2.0"
+retrofit = "2.9.0"
+navVersion = "2.7.0"
+roomKtx = "2.5.2"
+roomVersion = "2.5.2"
+support-annotations = "28.0.0"
+
+[libraries]
+accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanistSystemuicontroller" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "core-splashscreen" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
+androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+androidx-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "foundation" }
+androidx-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-junit" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navVersion" }
+androidx-paging-compose = { module = "androidx.paging:paging-compose", version.ref = "pagingVersion" }
+androidx-paging-runtime-ktx = { module = "androidx.paging:paging-runtime-ktx", version.ref = "pagingVersion" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomVersion" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomVersion" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltCompiler" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltCompiler" }
+junit = { module = "junit:junit", version.ref = "junit" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+support-annotations = { module = "com.android.support:support-annotations", version.ref = "support-annotations" }
+
+[plugins]
