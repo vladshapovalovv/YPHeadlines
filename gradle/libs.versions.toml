@@ -1,4 +1,10 @@
 [versions]
+android-gradle = "8.1.0"
+kotlin = "1.9.0"
+bom = "2023.08.00"
+ksp = "1.9.0-1.0.11"
+serialization = "1.9.0"
+hilt = "2.46.1"
 accompanistSystemuicontroller = "0.31.4-beta"
 activity-compose = "1.7.2"
 androidx-junit = "1.1.5"
@@ -21,6 +27,14 @@ roomVersion = "2.5.2"
 support-annotations = "28.0.0"
 
 [libraries]
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "bom" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+compose-ui-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-junit-4 = { module = "androidx.compose.ui:ui-test-junit4" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanistSystemuicontroller" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
@@ -45,4 +59,25 @@ junit = { module = "junit:junit", version.ref = "junit" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 support-annotations = { module = "com.android.support:support-annotations", version.ref = "support-annotations" }
 
+[bundles]
+compose = [
+    "compose-ui",
+    "compose-ui-graphics",
+    "compose-bom",
+    "compose-ui-preview",
+    "compose-material3"
+]
+test = [
+    "compose-junit-4"
+]
+debug = [
+    "compose-ui-tooling",
+    "compose-manifest"
+]
+
 [plugins]
+android-application = {id = "com.android.application", version.ref = "android-gradle"}
+android-kotlin = {id = "org.jetbrains.kotlin.android", version.ref = "kotlin"}
+ksp = {id = "com.google.devtools.ksp", version.ref = "ksp"}
+kotlin-serialization = {id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "serialization"}
+dagger-hilt = {id = "com.google.dagger.hilt.android", version.ref = "hilt"}
