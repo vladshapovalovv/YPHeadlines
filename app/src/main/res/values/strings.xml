@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">YPHeadlines</string>
+    <string-array name="first_page">
+        <item></item>
+        <item>Next</item>
+    </string-array>
+    <string-array name="second_page">
+        <item>Back</item>
+        <item>Next</item>
+    </string-array>
+    <string-array name="third_page">
+        <item>Back</item>
+        <item>Get started</item>
+    </string-array>
 </resources>
