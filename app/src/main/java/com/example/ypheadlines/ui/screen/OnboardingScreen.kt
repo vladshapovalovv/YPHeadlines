@@ -24,6 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.ypheadlines.R
 import com.example.ypheadlines.presentation.onboarding.pages
 import com.example.ypheadlines.ui.component.Dimens
+import com.example.ypheadlines.ui.component.OnBoardingPage
 import com.example.ypheadlines.ui.component.PageIndicator
 import com.example.ypheadlines.ui.component.YPHFilledButton
 import com.example.ypheadlines.ui.component.YPHTextButton
